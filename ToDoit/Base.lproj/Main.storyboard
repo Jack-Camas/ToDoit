@@ -31,7 +31,13 @@
                             <outlet property="delegate" destination="9Bh-LN-t4M" id="Zvx-o7-wtB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDoit" id="WcH-Gk-p8Y"/>
+                    <navigationItem key="navigationItem" title="ToDoit" id="WcH-Gk-p8Y">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qSM-mF-eS0">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="9Bh-LN-t4M" id="3A2-qY-5Bs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgV-el-uUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="labelColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -61,6 +67,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
