@@ -10,8 +10,13 @@ import UIKit
 class ToDoitViewController: UITableViewController {
 
     var itemArray = ["Find Mike", "Buy Eggos", "Destory Demorgon"]
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let items = defaults.array(forKey: "ToDoListArray") as? [String] {
+            itemArray = items
+        }
     }
     //MARK: - TablewView Datasource Methods
     
@@ -38,7 +43,7 @@ class ToDoitViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
-    //MARK: Add New Items
+    //MARK: - Add New Items
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
@@ -47,6 +52,7 @@ class ToDoitViewController: UITableViewController {
         let alert = UIAlertController(title: "Add New Item", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add Item", style: .default) { action in
             self.itemArray.append(textField.text!)
+            self.defaults.set(self.itemArray, forKey: "ToDoListArray")
             self.tableView.reloadData()
         }
         alert.addTextField { alertTextField in
