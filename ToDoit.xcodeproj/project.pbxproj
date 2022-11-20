@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0406CC832929E3A60073F035 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406CC822929E3A60073F035 /* Items.swift */; };
+		0406CC832929E3A60073F035 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406CC822929E3A60073F035 /* Item.swift */; };
 		04AF51FE290C899C0023B11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF51FD290C899C0023B11E /* AppDelegate.swift */; };
 		04AF5200290C899C0023B11E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF51FF290C899C0023B11E /* SceneDelegate.swift */; };
 		04AF5202290C899C0023B11E /* ToDoitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF5201290C899C0023B11E /* ToDoitViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0406CC822929E3A60073F035 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		0406CC822929E3A60073F035 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		04AF51FA290C899C0023B11E /* ToDoit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AF51FD290C899C0023B11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AF51FF290C899C0023B11E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		0406CC7D2929DDEE0073F035 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				0406CC822929E3A60073F035 /* Items.swift */,
+				0406CC822929E3A60073F035 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -91,11 +91,11 @@
 		04AF51FC290C899C0023B11E /* ToDoit */ = {
 			isa = PBXGroup;
 			children = (
-				0406CC802929DE420073F035 /* Views */,
-				0406CC7F2929DE030073F035 /* Controller */,
-				0406CC7D2929DDEE0073F035 /* Data Model */,
 				04AF51FD290C899C0023B11E /* AppDelegate.swift */,
 				04AF51FF290C899C0023B11E /* SceneDelegate.swift */,
+				0406CC7D2929DDEE0073F035 /* Data Model */,
+				0406CC802929DE420073F035 /* Views */,
+				0406CC7F2929DE030073F035 /* Controller */,
 				0406CC812929DF9E0073F035 /* Supporting Files */,
 				04AF520B290C899D0023B11E /* Info.plist */,
 			);
@@ -173,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0406CC832929E3A60073F035 /* Items.swift in Sources */,
+				0406CC832929E3A60073F035 /* Item.swift in Sources */,
 				04AF5202290C899C0023B11E /* ToDoitViewController.swift in Sources */,
 				04AF51FE290C899C0023B11E /* AppDelegate.swift in Sources */,
 				04AF5200290C899C0023B11E /* SceneDelegate.swift in Sources */,
