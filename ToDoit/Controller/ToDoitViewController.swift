@@ -9,7 +9,7 @@ import UIKit
 
 class ToDoitViewController: UITableViewController {
 
-    var itemArray = ["Find Mike", "Buy Eggos", "Destory Demorgon"]
+    var itemArray = ["Find Mike", "Buy Eggos", "Destory Demorgon", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u" ]
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -18,7 +18,7 @@ class ToDoitViewController: UITableViewController {
             itemArray = items
         }
     }
-    //MARK: - TablewView Datasource Methods --
+    //MARK: - TablewView Datasource Methods 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
